@@ -11,7 +11,11 @@ BASEPROJ_API int nBaseProj=0;
 // This is an example of an exported function.
 BASEPROJ_API int fnBaseProj(void)
 {
-	return 42;
+	int a = 40;
+
+	a++;
+
+	return a + 1;
 }
 
 // This is the constructor of a class that has been exported.
