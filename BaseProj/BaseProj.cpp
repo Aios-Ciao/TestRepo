@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "BaseProj.h"
 
+#include "AdditionalHeaderFile.h"
 
 // This is an example of an exported variable
 BASEPROJ_API int nBaseProj=0;
@@ -12,6 +13,8 @@ BASEPROJ_API int nBaseProj=0;
 BASEPROJ_API int fnBaseProj(void)
 {
 	int a = 40;
+
+	Test *test = new Test();
 
 	a++;
 
